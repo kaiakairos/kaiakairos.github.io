@@ -1,8 +1,9 @@
 
 html {
-margin: 0;
-padding: 10px;
-background-color: White;
+margin-top: 10px;
+padding: 0px;
+background-color: Black;
+background-image: url('images/stars-space.gif');
 }
 
 body {
@@ -27,4 +28,32 @@ p {
   font-size: 2vw;
   color: white;
   margin: auto;
+}
+
+.sociallink {
+    display: block;
+	outline: 2px solid black;
+    margin: 0 auto;
+	position: relative;
+	height:10%;
+	transition: .2s ease;
+}
+
+img.sociallink:hover {
+	outline: 2px solid white;
+	filter: brightness(120%);
+	box-shadow: 0 0 10px white;
+	transition: .2s ease;
+	scale: 0.96;
+}
+
+img.menu {
+	transition: .2s ease;
+}
+
+img.menu:hover {
+    outline: 1px solid white;
+	transform: translateY(2px);
+	filter: brightness(120%);
+	box-shadow: 0 0 10px white;
 }

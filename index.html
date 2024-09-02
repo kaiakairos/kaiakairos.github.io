@@ -9,28 +9,16 @@
 
 <style>
 
-.column {
-  float: left;
-  width: 16%;
-}
-
-.row {
-    clear: both;
-    display: table;
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
 .banner {
-	width: 90%;
+	width: 70%;
+	min-width: 1000px;
 	height: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: grey;
-	background-image: url('images/bannertile.png');
+	margin-bottom: 20px;
+	background-color: white;
 	display:flex;
+	border-radius: 5px 5px 5px 5px;
 }
 
 .leftbox {
@@ -56,13 +44,41 @@
 	padding-top: 4px ;
 }
 
+.artbody {
+	width:65%;
+	min-width: 1092px;
+	max-width: 1092px;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+	display:flex;
+	background-image: url('images/bg.png');
+	background-repeat: no-repeat;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.linkBody {
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	padding:10px;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.link {
+	padding:10px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="banner">
-	<img src="images/bannerEnd.png" alt="kaiakairos.net">
+<div class="banner">   <!-- SITE BANNER -->
 	<div class="leftbox">
 	<img src="images/titleCard.png" alt="kaiakairos.net" style="width:300px;height:60px">
 	</div>
@@ -70,19 +86,44 @@
 	<div class="menuboxborder">
 		<div class="menubox">
 			<div class="menubutton">
-				<img src="images/bannerButtonGames.png" alt="kaiakairos.net">
+				<img class="menu" src="images/bannerButtonGames.png" alt="kaiakairos.net">
 			</div>
 			<div class="menubutton">
-				<img src="images/bannerButtonBlog.png" alt="kaiakairos.net">
+				<img class="menu" src="images/bannerButtonBlog.png" alt="kaiakairos.net">
 			</div>
 			<div class="menubutton">
-				<img src="images/bannerButtonPortfolio.png" alt="kaiakairos.net">
+				<img class="menu" src="images/bannerButtonPortfolio.png" alt="kaiakairos.net">
 			</div>
 		</div>
 	</div>
-	<img src="images/bannerEnd.png" alt="kaiakairos.net">
 </div>
 
+<div class="artbody">
+
+	<div class="linkBody">
+	</div>
+	
+	<div class="linkBody">
+		<div class="link">
+			<img class="sociallink" src="images/links/ng.png">
+		</div>
+		<div class="link">
+			<img class="sociallink" src="images/links/git.png">
+		</div>
+		<div class="link">
+			<img class="sociallink" src="images/links/itch.png">
+		</div>
+		<div class="link">
+			<img class="sociallink" src="images/linkTest.png">
+		</div>
+		<div class="link">
+			<img class="sociallink" src="images/linkTest.png">
+		</div>
+		<div class="link">
+			<img class="sociallink" src="images/linkTest.png">
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
