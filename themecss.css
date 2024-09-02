@@ -1,9 +1,10 @@
 
 html {
-margin-top: 10px;
-padding: 0px;
+padding-top: 15px;
 background-color: Black;
-background-image: url('images/stars-space.gif');
+background-image: url('images/sitebg.png');
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 body {
@@ -30,14 +31,38 @@ p {
   margin: auto;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .sociallink {
     display: block;
 	outline: 2px solid black;
     margin: 0 auto;
 	position: relative;
-	height:10%;
+	height:100%;
 	transition: .2s ease;
 }
+
+.linktext {
+	font-family: soda;
+	position: absolute;
+	bottom: 8px;
+	font-size: 32px;
+	color:white;
+	text-shadow: 0.1em 0 black, 0 0.1em black, -0.1em 0 black, 0 -0.1em black, -0.1em -0.1em black, -0.1em 0.1em black, 0.1em -0.1em black, 0.1em 0.1em black;
+	right: 16px;
+}
+
+.artcredittext {
+	font-family: soda;
+	font-size: 16px;
+	transform: translate(8px,216px);
+	color:white;
+	text-shadow: 0.1em 0 black, 0 0.1em black, -0.1em 0 black, 0 -0.1em black, -0.1em -0.1em black, -0.1em 0.1em black, 0.1em -0.1em black, 0.1em 0.1em black;
+}
+	
 
 img.sociallink:hover {
 	outline: 2px solid white;
@@ -45,6 +70,13 @@ img.sociallink:hover {
 	box-shadow: 0 0 10px white;
 	transition: .2s ease;
 	scale: 0.96;
+	transform: translateX(6px);
+}
+img.sociallink:active{
+	scale:0.9;
+	transition: 0.1s;
+	transform: translateX(18px);
+	filter: brightness(150%);
 }
 
 img.menu {
@@ -52,8 +84,12 @@ img.menu {
 }
 
 img.menu:hover {
-    outline: 1px solid white;
-	transform: translateY(2px);
+	scale:1.1;
 	filter: brightness(120%);
-	box-shadow: 0 0 10px white;
+}
+
+img.menu:active {
+	transition: 0.01s;
+	scale:0.9;
+	filter: brightness(150%);
 }

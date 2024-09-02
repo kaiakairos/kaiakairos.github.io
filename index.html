@@ -11,14 +11,15 @@
 
 .banner {
 	width: 70%;
-	min-width: 1000px;
+	min-width: 900px;
 	height: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
 	background-color: white;
+	background-image: url('images/space.gif');
 	display:flex;
-	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 0 10px white;
 }
 
 .leftbox {
@@ -46,7 +47,7 @@
 
 .artbody {
 	width:65%;
-	min-width: 1092px;
+	min-width: 800px;
 	max-width: 1092px;
 	background-color: grey;
 	margin-left: auto;
@@ -55,6 +56,8 @@
 	background-image: url('images/bg.png');
 	background-repeat: no-repeat;
 	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 0 15px white;
+	outline: 2px solid white;
 }
 
 .linkBody {
@@ -65,12 +68,24 @@
 	margin-bottom:auto;
 	padding:10px;
 	display:flex;
-	align-items: center;
+	align-items: flex-end;
 	flex-direction: column;
 }
 
 .link {
+	display:flex;
 	padding:10px;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.artcredit {
+	width:100%;
+	height:100%;
+	position: relative;
+	text-align: left;
+	color: white;
 }
 
 </style>
@@ -79,50 +94,93 @@
 <body>
 
 <div class="banner">   <!-- SITE BANNER -->
+	<img src="images/bannerEnd.png">
 	<div class="leftbox">
-	<img src="images/titleCard.png" alt="kaiakairos.net" style="width:300px;height:60px">
+	<a href="index.html">
+		<img class="menu" src="images/titleCard.gif" alt="kaiakairos.net" style="width:386px;height:60px">
+	</a>
 	</div>
 	
 	<div class="menuboxborder">
 		<div class="menubox">
 			<div class="menubutton">
-				<img class="menu" src="images/bannerButtonGames.png" alt="kaiakairos.net">
+				<img class="menu" src="images/bannerButtonGames.png" alt="games!!">
 			</div>
 			<div class="menubutton">
-				<img class="menu" src="images/bannerButtonBlog.png" alt="kaiakairos.net">
+				<img class="menu" src="images/bannerButtonBlog.png" alt="blog...">
 			</div>
 			<div class="menubutton">
-				<img class="menu" src="images/bannerButtonPortfolio.png" alt="kaiakairos.net">
+				<img class="menu" src="images/bannerButtonPortfolio.png" alt="portfolio!">
 			</div>
 		</div>
 	</div>
+	<img src="images/bannerEnd.png">
 </div>
 
 <div class="artbody">
 
 	<div class="linkBody">
+		<div class="artcredit"> 
+			<div class="artcredittext"> 
+				<a href="https://www.newgrounds.com/art/view/kaiakairos/yellow-fellow"> 
+				link to art
+				</a> 
+			</div> 
+		</div>
+
 	</div>
 	
-	<div class="linkBody">
+	<div class="linkBody"> <!-- SOCIAL LINKS -->
 		<div class="link">
-			<img class="sociallink" src="images/links/ng.png">
+			<a href="https://kaiakairos.newgrounds.com/">
+				<img class="sociallink" src="images/links/ng.png">
+			</a>
+			<div class="linktext">NEWGROUNDS</div>
 		</div>
+		
 		<div class="link">
-			<img class="sociallink" src="images/links/git.png">
+			<a href="https://kaiakairos.itch.io/">
+				<img class="sociallink" src="images/links/itch.png">
+			</a>
+			<div class="linktext">ITCH.IO</div>
 		</div>
+		
 		<div class="link">
-			<img class="sociallink" src="images/links/itch.png">
+			<a href="https://github.com/kaiakairos">
+				<img class="sociallink" src="images/links/git.png">
+			</a>
+			<div class="linktext">GITHUB</div>
 		</div>
+		
 		<div class="link">
-			<img class="sociallink" src="images/linkTest.png">
+			<a href="https://x.com/kaiakairos">
+				<img class="sociallink" src="images/links/twitter.png">
+			</a>
+			<div class="linktext">TWITTER</div>
 		</div>
+		
 		<div class="link">
-			<img class="sociallink" src="images/linkTest.png">
+			<a href="https://www.twitch.tv/kaiakairos">
+				<img class="sociallink" src="images/links/twitch.png">
+			</a>
+			<div class="linktext">TWITCH</div>
 		</div>
+		
 		<div class="link">
-			<img class="sociallink" src="images/linkTest.png">
+			<a href="https://www.youtube.com/@kaiakairos">
+				<img class="sociallink" src="images/links/youtube.png">
+			</a>
+			<div class="linktext">YOUTUBE</div>
 		</div>
+		
 	</div>
+</div>
+
+
+<div class="linktext">
+	<a href="index.html"> 
+		kaiakairos.net
+	</a> 
 </div>
 
 </body>
