@@ -1,0 +1,12 @@
+instructions on adding new game in case you forgot
+
+add folder and place godot web export files inside of it
+
+then place the "coi-serviceworker.js" file inside the folder along with it
+open up the game's index.hmtl and add this line above the <title>:
+
+	<script src="coi-serviceworker.js"></script>
+	
+then link to the game with 
+	
+	<a href="games/<game name>/index.html"> </a>
