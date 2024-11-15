@@ -11,7 +11,7 @@
 
 .artbody {
 	width:65%;
-	min-width: 800px;
+	min-width: 900px;
 	max-width: 1092px;
 	background-color: grey;
 	margin-left: auto;
@@ -19,7 +19,7 @@
 	display:flex;
 	background-image: url('images/bg.png');
 	background-repeat: no-repeat;
-	border-radius: 15px 15px 15px 15px;
+	//border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 0 15px white;
 	outline: 3px solid white;
 }
@@ -51,6 +51,39 @@
 	text-align: left;
 	color: white;
 }
+
+.secondBody {
+	width:65%;
+	min-width: 900px;
+	max-width: 1092px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:40px;
+	display:flex;
+	min-height: 308px;
+	text-align: center;
+}
+
+
+ .latestBlog {
+	margin-left: auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	//display:flex;
+	align-items: start;
+	flex-direction: column;
+	text-align: right;
+	display:flex;
+	position: relative;
+	text-align: center;
+	color: white;
+	animation-name: shimmy;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+    
+
 
 </style>
 </head>
@@ -143,12 +176,25 @@
 	</div>
 </div>
 
-
-<div class="linktext">
-	<a href="index.html"> 
-		kaiakairos.net
-	</a> 
+<div class="secondBody">
+	
+	<iframe src="https://www3.cbox.ws/box/?boxid=3542168&boxtag=AWbv19" 
+	width="500px" height="280px" allowtransparency="yes" allow="autoplay" 
+	frameborder="5" marginheight="0px" marginwidth="0" scrolling="auto" ></iframe>	
+	
+	<div class="latestBlog">
+	
+		<img class="img" src="images/bubble.png" alt="games!!"></a>
+		<a href="https://kaiakairos.newgrounds.com/news/post/1483309">
+		<div class="latestBlogText">LATEST POST: <br> bug ball 3D <br> retrospective</div></a>
+		</a>
+	</div>
 </div>
+
+
+
+<!-- TEST: IFRAME GAME EMBED DOES WORK !! <iframe src="games/squadaddle/index.html" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
+
 
 </body>
 </html>
