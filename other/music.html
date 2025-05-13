@@ -25,6 +25,18 @@ background-position-y: 0px;}
 
 
 <div style="height:10px;margin-bottom:10px;margin-top:0px;width:100%"> </div>
+
+<script>
+
+function setImages(imageurl) {
+
+var elms = document.querySelectorAll("[id='album']");
+for(var i = 0; i < elms.length; i++) 
+  elms[i].src = imageurl ; // <-- whatever you need to do here.
+}
+
+</script>
+
  
 </div>
 <!-- BLOG CONTENT STARTS HERE -->
@@ -37,8 +49,8 @@ background-position-y: 0px;}
 <div class="blogsegment">
 	<div class="itemHolder" style="margin-top:-10px;margin-bottom:20px;perspective: 250px;perspective-origin: 10% 360px" >
 
-	<img class="albumCover" src="albumCovers/3dcountry.png" id="album" >
-	<img class="albumCover2" src="albumCovers/3dcountry.png" id="album">
+	<img class="albumCover" src="albumCovers/unknown.png" id="album" >
+	<img class="albumCover2" src="albumCovers/unknown.png" id="album">
 	
 	<img class="albumCoverShine" src="albumCovers/shine.png">
 	
@@ -52,7 +64,7 @@ background-position-y: 0px;}
 	</div>
 </div>
 
-
+<p onmouseover='setImages("albumCovers/lateralus.png")'> </p>
 
 <!-- BLOG CONTENT ENDS HERE -->
 
