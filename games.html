@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+
+<title>kaiakairos.net</title> <!-- sets tab name -->
+<link rel="icon" type="image/jpg" href="images/icon.png"> <!-- sets tab icon -->
+<link href="styleSheet.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
+<base target="_parent">
+</head>
+
+<script>
+
+function setDesc(title,description) {
+	document.getElementById("gameTitle").textContent = title;
+	document.getElementById("gameDescription").textContent = description;
+}
+
+</script>
+
+<body style="margin:0px;">
+
+<div class="mainBodyBox" style="margin-top:20px;width:800px;">
+	<div class="comicbox" style="height:75px;display:flex;"> 
+		<div class="fatFillBox" style="width:200px;"> <p><a href="javascript:history.back()"> <-- go home</a></p> </div>
+		<div class="fatFillBox" style="width:1000px;text-align:left;"> <h2>G A M E S</h2> </div>
+	</div>
+</div>
+
+<div class="mainBodyBox" style="margin-top:16px;width:800px;">
+	<div class="comicbox" style="height:800px;display:flex;">
+		<iframe src="gameList.html" style="height:100%;width:300px;border:none;margin:auto;" title="game list"></iframe> 
+		
+		<div class="fatFillBox" style="width:1000px;text-align:left;padding-left:40px;padding-right:30px;line-height: 30px;">
+			<h1 id="gameTitle">  </h1>
+			<p id="gameDescription">  </p>
+		</div>
+		
+	</div>
+</div>
+
+
+</body>
+</html>

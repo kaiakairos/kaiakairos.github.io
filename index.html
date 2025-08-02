@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>kaiakairos.net</title> <!-- sets tab name -->
 <link rel="icon" type="image/jpg" href="images/icon.png"> <!-- sets tab icon -->
-<link href="themecss.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
-
-<style>
-
-html {padding-top: 0px;
-background-image: url('images/walk.gif'), url('images/homepageBanner.png');
-background-repeat: repeat-x,repeat-x;
-background-position-x: left,center;
-background-position-y: 245px,0px;}
-
-
-
-
-</style>
-
+<link href="styleSheet.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
 
 </head>
 
 <body>
+<div class="mainBodyBox" style="/* display:flex; */padding-left:0px;align-content: flex-end;justify-content: space-around;">
+	<t>kaiakairos.net</t>
+</div>
 
-<h1>kaiakairos.net</h1>
-
-<img class="coolart" src="images/coolart.png">
-
-
-
-<div class="linkbox"> 
-	<a href="https://bsky.app/profile/kaiakairos.net">
-	<img class="linkimg" src="images/link1.png"></a>
+<div class="mainBodyBox">
+	<div class="navigationBody">
+		<div style="margin:8px;text-align:left;"><h2>E X P L O R E</h2></div>
+		<div style="margin:20px;margin-top:0px;text-align:left;"> 
+			<p><a href="games.html"> - games </a></p> 
+			<p><a href="wip.html"> - art </a></p> 
+			<p><a href="wip.html"> - comics </a></p>
+			<p><a href="wip.html"> - blog </a></p>
+			<p><a href="wip.html"> - friends </a></p>
+			<p><a href="wip.html"> - guestbook </a></p>
+			<p><a href="wip.html"> - cool stuff </a></p> 
+			
+			</div>
+		
+		<div style="margin:8px;text-align:left;"><h2>L I N K S</h2></div>
+		<div style="margin:20px;margin-top:0px;text-align:left;"> 
+			<p><a href="https://kaiakairos.newgrounds.com/"> - newgrounds </a></p> 
+			<p><a href="https://bsky.app/profile/kaiakairos.net"> - bluesky </a></p>
+			<p><a href="https://github.com/kaiakairos"> - github </a></p> 
+			<p><a href="https://www.youtube.com/@kaiakairos"> - youtube </a></p>
+			<p><a href="https://store.steampowered.com/developer/kaiakairos"> - steam </a></p> 
+			<p><a href="https://kaiakairos.itch.io/"> - itchio </a></p> 
+		</div>
+		
+		<!-- <iframe src="https://www3.cbox.ws/box/?boxid=3542168&boxtag=AWbv19" style="height:37%;width:90%;border:none;margin:auto;margin-top:7px;" title="comic list"></iframe> chat box  -->
+		
+	</div>
 	
-	<a href="https://kaiakairos.newgrounds.com/">
-	<img class="linkimg" src="images/link2.png"></a>
-	
-	<a href="https://github.com/kaiakairos">
-	<img class="linkimg" src="images/link3.png"></a>
-	
-	<a href="https://www.youtube.com/@kaiakairos">
-	<img class="linkimg" src="images/link4.png"></a>
-	
-	<a href="https://kaiakairos.itch.io/">
-	<img class="linkimg" src="images/link5.png"></a>
-	
-	<a href="https://store.steampowered.com/developer/kaiakairos">
-	<img class="linkimg" src="images/link6.png"></a>
+	<div class="personalBody">
+		<div class="aboutMeBox"> <img src="images/greenthing.png" class="profileImage">  
+		
+			<div style="margin:10px;"><h2>hi, i'm <flashText>kaia !!</flashText></h2><h2>welcome to my webbed site !!</h2></div>
+			
+			<div style="margin:20px;margin-top:34px;"> <p> i'm a game developer! here's some facts about me: </p> 
+			<p>- i'm <flashText>22</flashText> years old !! </p>
+			<p>- i'm from <flashText>Omaha, Nebraska</flashText> in the US.</p>
+			<p>- i like newgrounds !!</p>
+			<p>- i make all my games in <flashText>Godot 4.</flashText></p>
+			<p>- i like creatures quite a bit...</p>
+			<p>- i've been <pi>(technically)</pi> making games for <flashText>~14 years now !</flashText></p>
+			<p>- i'll get into comics one of these days...</p>
+			</div>
+			
+			<img src="images/panFlag.gif" class="queerFlag">
+			<img src="images/gayFlag.gif" class="queerFlag2">
+		
+		</div> 
+		
+		<div class="personalBody" style="display:flex;">
+			<div class="iframeHolder" style="width:100%;height:234px;"><h2 class="iframeHeader">W O R D S</h2>
+				<iframe src="blogList.html" style="height:calc(100% - 38px);width:100%;border:none;margin:auto;" title="blog list"></iframe> 
+			</div>
+			
+			<div class="iframeHolder" style="width:60%;height:234px;margin-left:0px;"><h2 class="iframeHeader">G A M E S</h2> 
+				<iframe src="gameList.html" style="height:calc(100% - 38px);width:100%;border:none;margin:auto;" title="game list"></iframe> 
+			</div>
+		
+		</div>
+	</div>
 
 </div>
 
-<div class="itemHolder">
 
-<iframe src="blogList.html" style="height:230px;width:600px;margin:20px;" title="blog list"></iframe>
-<iframe src="blogs/about.html" style="height:230px;width:400px;margin:20px;" title="blog list"></iframe>
-
-
-</div>
-
-<div class="itemHolder" style="margin-top:-10px;margin-bottom:20px;" >
-<div class="largeLinkBox"><a href="blogs/construction.html"><img class="largelinkboximage" src="images/gamesPage.png">games</a></div>
-<div class="largeLinkBox"><a href="blogs.html"><img class="largelinkboximage" src="images/blogsPage.png">blogs</a></div>
-<div class="largeLinkBox"><a href="other/portfolio.html"><img class="largelinkboximage" src="images/portfolioPage.png">portfolio</a></div>
-<div class="largeLinkBox"><a href="other/friends.html"><img class="largelinkboximage" src="images/friendsPage.png">friends</a></div>
-<div class="largeLinkBox"><a href="blogs/construction.html"><img class="largelinkboximage" src="images/musicPage.png">more</a></div>
-</div>
-
-<h1 style="font-size:40px;" >featured games</h1>
-
-<div class="itemHolder" style="margin-top:15px;" >
-
-	<div class="smallGameBox">waxweaver<a href="https://store.steampowered.com/app/3599070/waxweaver/"><img class="smallgameicon" src="images/gameicons/waxweaver.png">check it out -></a></div>
-	<div class="smallGameBox">bug ball 3D<a href="https://store.steampowered.com/app/2976450/Bug_Ball_3D/"><img class="smallgameicon" src="images/gameicons/bugball.png">check it out -></a></div>
-	<div class="smallGameBox">timmy christmas<a href="https://www.newgrounds.com/portal/view/960979"><img class="smallgameicon" src="images/gameicons/timmychristmas.png">check it out -></a></div>
-	<div class="smallGameBox">heliox station<a href="https://www.newgrounds.com/portal/view/893572"><img class="smallgameicon" src="images/gameicons/helioxstation.png">check it out -></a></div>
+<div class="mainBodyBox" style="margin-top:-6px;">
 	
-</div>
-
-<div class="itemHolder" style="margin-top:15px;" >
-
-	<div class="smallGameBox">squadaddle<a href="https://www.newgrounds.com/portal/view/875403"><img class="smallgameicon" src="images/gameicons/squad.png">check it out -></a></div>
-	<div class="smallGameBox">s. c. d.<a href="https://www.newgrounds.com/portal/view/903952"><img class="smallgameicon" src="images/gameicons/sentient.png">check it out -></a></div>
-	<div class="smallGameBox">plumer quest !<a href="https://www.newgrounds.com/portal/view/907570"><img class="smallgameicon" src="images/gameicons/plumer.png">check it out -></a></div>
-	<div class="smallGameBox">lunar worm<a href="https://www.newgrounds.com/portal/view/880386"><img class="smallgameicon" src="images/gameicons/lunarworm.png">check it out -></a></div>
+	<div class="moreBox" style="padding-bottom:2px;"> <img src="images/adSpot.png" height="234px"  style="margin:0px;padding:0px;image-rendering: auto;"> </div>
 	
+	<div class="iframeHolder" style="width:450px;height:234px;margin-left:0px;"><h2 class="iframeHeader">C O M I C S</h2> 
+				<iframe src="comicList.html" style="height:calc(100% - 38px);width:100%;border:none;margin:auto;" title="comic list"></iframe> 
+			</div>
 </div>
 
+<div class="mainBodyBox" >
+	<div class="buttonBox" style="backdrop-filter:brightness(0.5);">
+		<div class="buttonBoxScroll">
+			<a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button3.gif"></a><!-- button by exund -->
+			<a href="https://www.youtube.com/@LinusTechTips" target="_blank"> <img class="button" src="buttons/linus.gif" alt="Linus"></a>
+			<a href="https://blobgarden.neocities.org/"><img src="https://blobgarden.neocities.org/blobgarden_88x31.gif"></a>
+			<a href="https://www.newgrounds.com/"> <img src="buttons/newgrounds.gif" > </a>
+			<a href="https://deltarune.com/"> <img src="buttons/ralsei.gif" > </a>
+			<a href="https://morushroom.nekoweb.org/"> <img src="buttons/morusPond.png" > </a>
+			<a href="https://store.steampowered.com/app/3599070/waxweaver/"> <img src="buttons/waxweaverButton.gif" > </a>
+		</div>
+	</div>
+</div>
 
-<div style="background-color: #446a37;height:10px;margin-bottom:10px;margin-top:60px;"> </div>
-<div class="blogdatebox" style="margin-top:0px;margin-left:auto;margin-right:3px;margin-bottom:6px; background-color: #00000000;text-align:right;">kaiakairos.net</div>
+<div class="mainBodyBox" style="display:block;">
+	<p><quiet>kaiakairos.net</quiet></p>
+</div>
 
 </body>
 </html>

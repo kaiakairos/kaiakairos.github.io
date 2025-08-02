@@ -1,224 +1,77 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-<title>blog: December 28th 2024</title> <!-- sets tab name -->
+<title>Blog Post</title> <!-- sets tab name -->
 <link rel="icon" type="image/jpg" href="../images/icon.png"> <!-- sets tab icon -->
-<link href="../themecss.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
-
-<style>
-html {padding-top: 0px;
-background-image: url('../images/walk.gif');
-background-repeat: repeat-x;
-background-position-x: left;
-background-position-y: 0px;}
-</style>
-
+<link href="../styleSheet.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
 
 </head>
 
 <body>
 
+<div class="fatFillBox" style="width:1080px;margin:auto;margin-bottom:24px;"> <p><a href="javascript:history.back()"> <-- go home</a></p> </div>
 
 
-<div class="blogcontainer">
 
-<p><a href="../index.html"><- go back home </a></p> <p></p>
-<div style="height:10px;margin-bottom:10px;margin-top:0px;"> </div>
- 
-<h2>2024 recap: games, art, and life</h2> <div class="blogdatebox" style="margin-top:10px;margin-left: auto;">December 28th 2024</div>
+<div class="blogWide">
 
-<div style="background-color: #446a37;height:10px;margin-bottom:0px;"> </div>
-</div>
+<h1>2024 recap: games, art, and life</h1> <i> December 28th 2024 </i> <!-- blog title and date! -->
 
-<div class="blogsegment">
 <p> ( this post is an existing blog from newgrounds being converted over on april 12th 2025. tbh i already disagree with a good chunk of what i said here lol ) </p>
-</div>
-
-<div class="blogsegment">
 <p><a href="https://kaiakairos.newgrounds.com/news/post/1499292"> link to original post </a></p>
-</div>
-
-<div class="blogsegment">
 <img class="blogimg" src="https://img.ngfiles.com/image-uploads/000/001/325/iu_1325325_10418182.png">
-</div>
-
-<div class="blogsegment">
 <p> hello everybody, it's that time of year again. I wanna go over some of the things that happened in 2024, mostly for the sake of not forgetting anything as the future rolls forward, and for anyone who happens to be interested. I'll also be talking about my general art direction going into 2025, which you might be curious about. I'm gonna write this all in a big long ramble, I'll try to keep it organized but sorry if it ends up kind of unreadable lol </p>
-</div>
-
-<div class="blogsegment">
 <p> This year, I didn't make as many things as I did in 2023. Part of me feels lazy about that, but actually looking back I feel my time this year was much better spent, and I'm a lot prouder of the things I've made and finished this year compared to last. My games and such from 2023 leave a lot to be desired, playing them now there are so many spots where I slacked off. I'm not talking like bad or unskilled design, there are a lot of moments where I skimped out purely because I wanted to get the project finished faster or was too lazy to implement the proper elements to fix things. In a sense, this was good. When learning to make games just getting the game out the door is one of the most important steps. Still, a lot of it left me unsatisfied. </p>
-</div>
-
-<div class="blogsegment">
 <p> I assumed I must have just been a pessimistic loser who hates everything they make and can only see the flaws, but this year my mind has changed quite a bit. I'm not pessimistic, I'm just critical. As I've gotten better at the craft, I have felt a lot better about what I've made. I can say with some certainty that I am pretty darn proud of the stuff I've put together this year, so now I'd like to go into some of those projects and see what's up. </p>
-</div>
-
-<div class="blogsegment">
 <p> I'm NOT going to be sticking to a linear timeline on this, by the way. I was a bit unfocused this year, so ALL of these projects overlap in some way. I'll be doing this on a project to project basis, I'll explain it to the best of my ability but consult the timeline if you get lost. </p>
-</div>
-
-<div class="blogsegment">
 <img class="blogimg" src="https://img.ngfiles.com/image-uploads/000/001/325/iu_1325326_10418182.png">
-</div>
-
-<div class="blogsegment">
-<h3> bug ball 3d </h3>
+<h2> bug ball 3d </h2>
 <p> I'm starting with bug ball because it's the first game I published here on newgrounds this year. I had honestly forgotten how much time I had spent on bug ball until I was making that timeline image just now. I already spoke on bug ball and my feelings about it in my bug ball retrospective post but I'll do a quick run down of the timeline and some additional thoughts anyways. I was working on my then unnamed sandbox project, and at some point I took note that with my current scope, there was no way in hell it would come out in 2024, and that I should probably work on a different smaller project in the meantime. At some point, while I was at work I had the random idea to create a pill bug movement controller, with different segments that would visually bend. I got home, created it, and then created the roll functionality too. Pretty quickly I had a cool player controller and needed some sort of environment for him to run about in. I decided to reuse some code I had originally played with in January to create fake 3D environments using Godot's polygon2d. </p>
-</div>
-
-<div class="blogsegment">
 <img class="blogimg" src="https://img.ngfiles.com/image-uploads/000/001/325/iu_1325328_10418182.gif">
-</div>
-
-<div class="blogsegment">
 <p> Similar to that original prototype, I initially had the idea to make bug ball a simple rpg, where you could walk around and talk to characters, progressing a little narrative. I decided however that that would be a bad call, since I still wanted to work on my sandbox project and couldn't afford to take on ANOTHER huge project. I went with a simpler arcade format instead, which eventually became the bug ball you know and love ( or hate. or are indifferent on. )</p>
-</div>
-
-<div class="blogsegment">
 <p> I worked on both the sandbox and bug ball interchangeably, but bug ball being the simpler game took precedent. I had been wanting to do something for a while though: put a game on steam. I wanted to for the experience, so that when I go to make a more serious project, I know what I'm doing. Bug ball's arcade-y format lends itself well to future content additions, so the goal was set. Make a free demo here on newgrounds, and then add more levels and sell a complete version on steam. Development moved quickly up until June, when I decided to release the demo. Bug ball was far my most polished game, with really no areas left untouched or ignored. A huge step up from last year. Reception was mixed, lots of people found it too hard, which I expected. It can be hard for a lot of people to commit to a free web game in general, so when its an experience as abrasive as bug ball, lots of people just end up quitting. Can't blame em for that, I'm the exact same way. Despite making lots of hard games, I'm not the biggest fan of them myself. The people that do like hard games however loved bug ball, and I got lots of kind words about it, so thank you. </p>
-</div>
-
-<div class="blogsegment">
 <p> After the demo release, I took a break from bug ball to focus more attention towards the sandbox game. This was meant to be a short break, but after working on the sandbox, I realized how much more passionate I was for it over bug ball, and had a hard time getting myself to work on it. I also got hired to work on somebody else's game in august (more on that later) which further hindered my ability to work on it. The release plan was for August, then September, then October. After the hiring job was finished, I banned myself from doing anything else and cranked out the remaining content, releasing the game October 21st. </p>
-</div>
-
-<div class="blogsegment">
 <p> Overall, it was a very good learning experience. I learned the ins and outs of using steam, I polished the absolute shit out of the game, and I understood more about myself and why I was making games in the first place. The biggest draw to game dev for me is being able to make worlds. Not just worlds that you watch and observe, but worlds you can step into and influence. That concept is very creatively invigorating for me, and its part of the reason I struggled with making bug ball. Bug ball lacks a world, or characters, or ability to influence. While I am proud of bug ball, it's just not the type of game that I want to be making. If you're a fan of my current work, I'm going to be shifting direction quite a bit for 2025 and onwards. I want to practice stuff like writing and maybe a bit of music too. </p>
-</div>
-
-<div class="blogsegment">
-<h3> waxweaver </h3>
+<h2> waxweaver </h2>
 <p> waxweaver is the name I only just recently gave to a project I've been working on since January of this year. It's still currently unreleased, however you can play an alpha build on itch.io. I was originally referring to this project as simply "planet sandbox", just so there isn't any confusion. </p>
-</div>
-
-<div class="blogsegment">
 <img class="blogimg" src="https://img.ngfiles.com/image-uploads/000/001/325/iu_1325327_10418182.gif">
-</div>
-
-<div class="blogsegment">
 <p> This game has a pretty insane amount of history to it compared to any other game I've made, being about 7 years from concept to something functional. Originally in 2017-ish I was disappointed by how dog shit starbound was, and I wanted to make my own space exploring terraria type sandbox game. The main gimmick I had in my head was that you'd be able to make whatever ship you wanted, and you'd be able to fly it seamlessly to another, just by going there in physical space. Because I was 14 / 15 years old, I also thought it'd be cool if it was an mmo, and you could randomly come across other players or bases. At the time, I had absolutely zero skills, and the idea never became anything more than a few drawings I made while at school. </p>
-</div>
-
-
-<div class="blogsegment">
 <p> 4 years later in 2021 though, I was slowly figuring out how to operate the Godot engine, and decided it was a good time to try and make my project. It didn't end up working. </p>
-</div>
-
-<div class="blogsegment">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yn8WG6fXpJA?si=bIIgqUqBe45AjB6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-<div class="blogsegment">
 <p> the concept was there though, i learned a shit load about godot making that project. I didn't have the skills to pull it off at the time, but the idea never left my brain.</p>
-</div>
-
-<div class="blogsegment">
 <p> Fast forward to January 2024. I got it. It's happening. I'm making the planet sandbox again. The insatiable urge will never leave unless I make it, so I have to. And you know what, things were goin pretty good this time. </p>
-</div>
-
-<div class="blogsegment">
 <p> This game really proved to me how much my skills had developed, which has been very valuable for my sanity. Often while I've been making waxweaver, I've said to myself "I don't have the skills to add that to the game." Then I try to add it anyways, and every time it ended up being way easier than I had made it out to be. My skills had improved faster than my confidence, and working on this game helped me get a better picture of where I was. </p>
-</div>
-
-<div class="blogsegment">
 <p> I also learned a bit of c++, as it was required to get this game able to run on web. </p>
-</div>
-
-<div class="blogsegment">
 <p> All that being said, there have been a few hitches. I've scoped down the game significantly from the 2017 concept, and even more since January. Right now, I'm just doing a singular planet, that the player can explore and do all kinds of things with. I've dropped the space exploration entirely, because to be entirely honest, flying around in a 2d environment like this just sucks. Quite literally impossible to navigate without a map, and there isn't any purpose to being in space itself. </p>
-</div>
-
-<div class="blogsegment">
 <p> Functionally, it was no different than starbound. Cutting it has helped me work faster AND I think it'll be a better game because of it. I've always had this itch to make a sandbox game like terraria or minecraft, and with this game the itch has been scratched. Once I finish it, my brain will properly move on to fresh ideas, as its already doin now :) </p>
-</div>
-
-<div class="blogsegment">
-<h3> endoparasitic 2 </h3>
+<h2> endoparasitic 2 </h2>
 <p> After seeing a twitter post from game developer and youtuber Miziziziz asking to hire level designers for their upcoming game, I applied, and ended up getting the job! This was the first time I had done game work for anybody other than myself, so I consider it a valuable experience, even if it was small scale. I was also pretty excited to work on a game I actually knew about and knew there would be a lot of feedback on. I was hoping markiplier was gonna play it but that is still to be determined lol. Unfortunately, the game was rushed quite a bit by Miz, and the final game leaves quite a bit to be desired. It wasn't my project to run, but I do think I got some second hand experience about running projects with multiple people. Time will tell if that experience applies, assuming I get around to it. </p>
-</div>
-
-<div class="blogsegment">
-<h3> timmy christmas </h3>
+<h2> timmy christmas </h2>
 <p> I don't have too much to say about timmy christmas. You just gotta experience it for youself. </p>
-</div>
-
-<div class="blogsegment">
 <p> I was a little sad I had only published 1 game here in 2024, so to remedy this, last week I spent 3 whole days shitting out timmy christmas. Honestly, I really love timmy christmas. It's also been very well received. Last year, I made plumer quest, a shitpost game for my gay wife's birthday. I think timmy christmas is a bit of a culmination of what I've learned this year, and the difference in enjoyability between it and plumer quest is the proof. </p>
-</div>
-
-<div class="blogsegment">
 <p> It's a hard game, but the frequent checkpoints and funny ragdolls make death not very irritating. It's short, and even players who struggle a lot finish the game is 10 ish minutes. Even if it did irritate you, the final bit where you become ripped and destroy the level that was causing you so much trouble is both funny and satisfying. It's garbage and stupid but I genuinely feel like its one of the best designed games I've ever made, and for that I'm really happy with it. </p>
-</div>
-
-<div class="blogsegment">
-<h3> cool art from 2024 </h3>
-</div>
-
-<div class="blogsegment">
+<h2> cool art from 2024 </h2>
 <img class="blogimg" src="https://art.ngfiles.com/medium_views/6264000/6264443_1486008_kaiakairos_secret-santa-2024.1b64ef31098c2a597ad2d7703edd9e8f.webp?f1733527327">
-</div>
-<div class="blogsegment">
 <img class="blogimg" src="https://art.ngfiles.com/medium_views/5561000/5561256_616345_kaiakairos_untitled-5561256.85b10f9343c67fb97af199957c1a122e.webp?f1711403285">
-</div>
-<div class="blogsegment">
 <img class="blogimg" src="https://art.ngfiles.com/images/6196000/6196769_1403388_kaiakairos_untitled-6196769.7c62049ab5228d4bef6e9946c6a39a5b.webp?f1731224702">
-</div>
-<div class="blogsegment">
 <img class="blogimg" src="https://art.ngfiles.com/images/6212000/6212045_1422218_kaiakairos_untitled-6212045.a3c248db994d628a10b39fe323aeb33e.webp?f1731726844">
-</div>
-<div class="blogsegment">
 <img class="blogimg" src="https://art.ngfiles.com/images/6027000/6027324_1191224_kaiakairos_untitled-6027324.88aba28c101d6684ec25077fc769a71e.webp?f1726002665">
-</div>
-
-<div class="blogsegment">
-<h3> life stuff </h3>
-</div>
-
-<div class="blogsegment">
+<h2> life stuff </h2>
 <p> In June ( actually it was the exact same time as Bug Ball's demo release ) I finally moved out and got a place of my own !! ( in addition to my gay wife of course ). This has been pretty darn awesome, I feel a lot better in the brain and I have a lot more control over my environment. I've also been a lot more productive too, which is a great bonus. </p>
-</div>
-
-<div class="blogsegment">
 <p> Last year a met a handful of newgrounds people, and this year I've gotten to know everyone better, and I can tell that I'm slowly becoming a less and less anxious freak. I've got my ups and downs, but I think overall from last year I'm doing a lot better, which is awesome. </p>
-</div>
-
-<div class="blogsegment">
 <p> A couple of my irl friends also got their own place as roomies. Everyone's gettin older! damn. It's a wonderful thing. </p>
-</div>
-
-<div class="blogsegment">
 <img class="blogimg" src="https://img.ngfiles.com/image-uploads/000/001/325/iu_1325331_10418182.webp">
-</div>
-
-<div class="blogsegment">
 <p> I don't have much else to mention on my own life, only that things are generally lookin up. My life isn't super interesting but that's the way I like it. </p>
-</div>
-
-<div class="blogsegment">
 <p> For the future: Waxweaver is still being worked on, it'll be out pretty darn soon. My brain has already been flooded with ideas waiting for myself to finish this game ( I got 3 big ones ), so I know exactly what I'm gonna be hopping on the moment I get the time. No timeline on that yet, just know it'll be badass. </p>
-</div>
-
-<div class="blogsegment">
-<h3> cool stuff </h3>
-</div>
-
-<div class="blogsegment">
+<h2> cool stuff </h2>
 <p> im getting lazy copying this blog post over, and newgrounds links won't embed like they do on the site and i dont wanna make custom graphics just for this. if u wannt see those, click on the original blog from newgrounds</p>
-</div>
-
-<div class="blogsegment">
 <p><a href="https://kaiakairos.newgrounds.com/news/post/1499292"> link to original post </a></p>
+
+
 </div>
 
-
-<div class="blogsegment">
-<div style="background-color: #446a37;height:10px;margin-bottom:20px;margin-top:60px;"> </div>
-<p><a href="../index.html"><- go back home </a></p> </div>
-<div style="height:10px;margin-bottom:20px;margin-top:0px;"> </div>
+<div class="fatFillBox" style="width:1080px;margin:auto;margin-bottom:24px;"> <p><a href="javascript:history.back()"> <-- go home</a></p> </div>
 
 </body>
 </html>

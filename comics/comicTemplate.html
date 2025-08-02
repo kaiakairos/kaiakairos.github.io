@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html style="background-image:url(../images/bg.gif);animation-name: none;">
+<head>
+
+<title>COMIC TITLE</title> <!-- sets tab name -->
+<link rel="icon" type="image/jpg" href="images/icon.png"> <!-- sets tab icon -->
+<link href="../styleSheet.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
+
+</head>
+
+<script>
+var page = 0;
+var amountOfPages = 4;
+var comicFolder = "testComic";
+
+var fitWidth = 0;
+var filter = 0;
+
+function nextPage() {
+	page++;
+	if (page == amountOfPages) { page--; }
+	document.getElementById("comicImage").src = "comicPages/" + comicFolder + "/" + page.toString() + ".png";
+	updateText()
+}
+
+function lastPage() {
+	page--;
+	if (page == -1) { page++; }
+	document.getElementById("comicImage").src = "comicPages/" + comicFolder + "/" + page.toString() + ".png";
+	updateText()
+}
+
+function goToPage(pageToGoTo) {
+	if (pageToGoTo < 0){ pageToGoTo = 0; }
+	if (pageToGoTo >= amountOfPages){ pageToGoTo = amountOfPages-1; }
+	document.getElementById("comicImage").src = "comicPages/" + comicFolder + "/" + pageToGoTo.toString() + ".png";
+	page = pageToGoTo;
+	updateText()
+}
+
+function updateText() {
+	var truePage = page + 1;
+	var gay = new URL(window.location.href);
+	gay.hash = "";
+	window.location.replace(gay + "#" + truePage.toString());
+	document.getElementById("pageNumberText").textContent="page " + truePage.toString() + " / " + amountOfPages.toString();
+	document.getElementById("pageJump").value = truePage;
+	window.scrollTo(0, 0);
+}
+
+function updateSettings(){
+	var newStyle = "";
+	
+	if(fitWidth == 1){ newStyle = newStyle + "width:100%;"; }
+	if(fitWidth == 0){ newStyle = newStyle + "height:720px;"; }
+	if(filter == 1){ newStyle = newStyle + "image-rendering: auto;"; }
+	
+	document.getElementById("comicImage").style = newStyle;
+}
+
+function toggleFitWidth(){
+	fitWidth = Math.abs(fitWidth - 1);
+	updateSettings()
+}
+
+function toggleFilter(){
+	filter = Math.abs(filter - 1);
+	updateSettings()
+}
+
+window.onload = function(){
+	const result = location.hash.substring(1);
+	if(result.length > 0){
+		var pageInt = parseInt(result);
+		page = pageInt - 1;
+	}
+	goToPage(page);
+	document.getElementById("pageJump").max = amountOfPages;
+	
+	 function test() {
+		 var w = window.innerWidth - 290;
+		 var h = window.innerHeight - 400;
+		 var balls = window.scrollY + h;
+		 document.getElementById("navBox").style.transform = "translate(" + w + "px," + balls.toString() + "px)";
+     }
+     setInterval(test, 10);
+	 updateSettings()
+	
+}
+
+
+
+</script>
+
+<body>
+
+<div class="navigationBox" style="transform:translate(0px,0px);" id="navBox"> <!-- CONTROL BOX -->
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<p> navigation </p>
+	</div>
+
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a onclick='goToPage(document.getElementById("pageJump").value - 1)' style="font-size:12px;"> jump to page </a>
+		</div>
+		<div class="poopbox" style="margin:auto;">
+			<input type="number" id="pageJump" name="pageJump" style="width: 42px;" min="1">
+		</div>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a onclick='goToPage(0)' style="font-size:12px;"> first page </a>
+		</div>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a onclick='goToPage(amountOfPages)' style="font-size:12px;"> last page </a>
+		</div>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a onclick='goToPage(Math.floor(Math.random() * amountOfPages))' style="font-size:12px;"> random page </a>
+		</div>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<p> settings </p>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a onclick='toggleFitWidth()' style="font-size:12px;"> toggle page fit </a>
+		</div>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a onclick='toggleFilter()' style="font-size:12px;"> toggle anti-aliasing </a>
+		</div>
+	</div>
+
+</div>
+
+<div class="mainBodyBox" style="display:block;margin:auto;">
+	
+	<div class="comicbox" style="margin-bottom:7px;height:40px;display:flex;min-height: 76px;">
+
+		<div class="poopbox" style="width:200px;transform:translate(0px,8px);">
+			<a href="javascript:history.back()"> <-- go back </a>
+		</div>
+		<div class="poopbox" style="text-align:right;padding-right:20px">
+			<h2> Comic Title </h2>
+		</div>
+		
+	</div>
+	
+	<div class="comicbox" > <!-- comic img -->
+		<img src="" id="comicImage" style="height:720px;">
+	</div>
+	
+	<div class="comicbox" style="margin-top:7px;height:20px;display:flex;min-height: 60px;"> <!-- move box -->
+		
+		<div class="poopbox"></div>
+		<div class="poopbox"><a onclick='lastPage()'> BACK PAGE </a></div>	
+		<div class="poopbox"><p id="pageNumberText"> page 1 / 3 </p></div>
+		<div class="poopbox"><a onclick='nextPage()'> NEXT PAGE</a></div>
+		<div class="poopbox"></div>
+	
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>

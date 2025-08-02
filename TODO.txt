@@ -1,0 +1,24 @@
+WEBSITE TO DO:
+- make dedicated COMIC page that provides description before u click on it
+- make dedicated blog viewer page
+- make friend page
+- art page?
+- figure out what im gonna do with additional website box
+- complete game list
+- embed games into website itself
+
+
+
+
+
+
+- once website is refreshed on github, make a version on neocities and nekoweb with the funtion below
+<script>
+window.onload = function(){
+	window.location.replace("http://kaiakairos.net/");
+}
+</script>
+
+this will allow for a seamless redirect that should keep the back button intact 
+
+notes: to test cross origin stuff, open cmd in web folder, type python3 -m http.server, and head to http://localhost:8000
