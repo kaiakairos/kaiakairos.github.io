@@ -1,5 +1,5 @@
 html {
-	/*background-color:black;*/
+	background-color:black;
 	image-rendering: pixelated;
 	background-image:url("images/cloudsbg.gif"),url("images/skybg.gif");
 	animation-name: backgroundScroll;
