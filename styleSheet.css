@@ -343,7 +343,7 @@ img.queerFlag2 {
 .buttonBoxScroll {
 	width:100%;
 	display:flex;
-	animation: buttonScroll ease-in-out 16s infinite;
+	animation: buttonScroll ease-in-out 8s infinite;
 	margin-top:10px;
 	margin-bottom:10px;
 	margin-left:0px;
@@ -373,7 +373,7 @@ img.queerFlag2 {
 
 @keyframes buttonScroll {
   0% {transform:translate(16px,0px);} /*      \/     replace this number with number of buttons                  */
-  50%{transform:translate(  calc(calc(-102px * 7) + 1135px)  ,0px);}
+  50%{transform:translate(  calc(calc(-98px * 10) + 1104px)  ,0px);}
   100%{transform:translate(16px,0px);} 
 }
 
