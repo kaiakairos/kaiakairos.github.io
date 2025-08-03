@@ -3,8 +3,6 @@ WEBSITE TO DO:
 - make dedicated blog viewer page
 - make friend page
 - art page?
-- figure out what im gonna do with additional website box
-- complete game list
 - embed games into website itself
 
 
