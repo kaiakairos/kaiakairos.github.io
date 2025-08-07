@@ -88,6 +88,17 @@ window.onload = function(){
 	
 }
 
+function goHomeDeterminer(){
+	var previous = document.referrer.hostname;
+	var currentDomain = window.location.hostname;
+	
+	if (previous === currentDomain){
+		history.back(); // go back
+	} else {
+		window.location.href = "../index.html";
+	}
+	
+}
 
 
 </script>
@@ -102,7 +113,7 @@ window.onload = function(){
 	
 	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
 		<div class="poopbox" style="width:270px;">
-			<a href="javascript:history.back()" style="font-size:12px;"> <-- go home </a>
+			<a onclick='goHomeDeterminer()' style="font-size:12px;"> <-- go home </a>
 		</div>
 	</div>
 	
