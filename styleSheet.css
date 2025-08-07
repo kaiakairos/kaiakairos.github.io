@@ -435,7 +435,7 @@ t {
 .comicbox {
 	width:100%;
 	margin:auto;
-	border: ridge 10px white;
+	border: ridge 5px white;
 	border-radius: 5px;
 	/*background-image:url("images/bg.gif");*/
 	backdrop-filter:brightness(0.1) blur(5px);
@@ -454,15 +454,15 @@ t {
 
 .navigationBox {
 	margin:auto;
-	border: ridge 10px white;
+	border: ridge 5px white;
 	border-radius: 5px;
 	/*background-image:url("images/bg.gif");*/
 	backdrop-filter:brightness(0.1) blur(5px);
 	box-shadow:4px 4px 0px black;
 	display:block;
 	padding:10px;
-	width:160px;
-	height:300px;
+	width:200px;
+	height:320px;
 	position:absolute;
 	z-index : 1;
 }

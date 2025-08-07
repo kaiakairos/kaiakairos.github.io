@@ -52,7 +52,7 @@ function updateSettings(){
 	var newStyle = "";
 	
 	if(fitWidth == 1){ newStyle = newStyle + "width:100%;"; }
-	if(fitWidth == 0){ newStyle = newStyle + "height:720px;"; }
+	if(fitWidth == 0){ newStyle = newStyle + "height:840px;"; }
 	if(filter == 1){ newStyle = newStyle + "image-rendering: auto;"; }
 	
 	document.getElementById("comicImage").style = newStyle;
@@ -77,13 +77,13 @@ window.onload = function(){
 	goToPage(page);
 	document.getElementById("pageJump").max = amountOfPages;
 	
-	 function test() {
-		 var w = window.innerWidth - 290;
-		 var h = window.innerHeight - 400;
+	 function moveNavigationBox() {
+		 var w = 20;
+		 var h = 20;
 		 var balls = window.scrollY + h;
 		 document.getElementById("navBox").style.transform = "translate(" + w + "px," + balls.toString() + "px)";
      }
-     setInterval(test, 10);
+     setInterval(moveNavigationBox, 10);
 	 updateSettings()
 	
 }
@@ -95,16 +95,27 @@ window.onload = function(){
 <body>
 
 <div class="navigationBox" style="transform:translate(0px,0px);" id="navBox"> <!-- CONTROL BOX -->
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<p style="font-family: sanscodeItalic;"> Comic Title </p>
+	</div>
+	
+	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
+		<div class="poopbox" style="width:270px;">
+			<a href="javascript:history.back()" style="font-size:12px;"> <-- go home </a>
+		</div>
+	</div>
+	
 	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
 		<p> navigation </p>
 	</div>
 
 	<div class="poopbox" style="height:24px;display:flex;padding:4px;">
-		<div class="poopbox" style="width:270px;">
+		<div class="poopbox" style="width:240px;">
 			<a onclick='goToPage(document.getElementById("pageJump").value - 1)' style="font-size:12px;"> jump to page </a>
 		</div>
 		<div class="poopbox" style="margin:auto;">
-			<input type="number" id="pageJump" name="pageJump" style="width: 42px;" min="1">
+			<input type="number" id="pageJump" name="pageJump" style="width: 66px;" min="1">
 		</div>
 	</div>
 	
@@ -144,24 +155,15 @@ window.onload = function(){
 
 </div>
 
+
 <div class="mainBodyBox" style="display:block;margin:auto;">
 	
-	<div class="comicbox" style="margin-bottom:7px;height:40px;display:flex;min-height: 76px;">
-
-		<div class="poopbox" style="width:200px;transform:translate(0px,8px);">
-			<a href="javascript:history.back()"> <-- go back </a>
-		</div>
-		<div class="poopbox" style="text-align:right;padding-right:20px">
-			<h2> Comic Title </h2>
-		</div>
-		
-	</div>
 	
 	<div class="comicbox" > <!-- comic img -->
 		<img src="" id="comicImage" style="height:720px;">
 	</div>
 	
-	<div class="comicbox" style="margin-top:7px;height:20px;display:flex;min-height: 60px;"> <!-- move box -->
+	<div class="comicbox" style="margin-top:7px;height:20px;display:flex;min-height: 50px;"> <!-- move box -->
 		
 		<div class="poopbox"></div>
 		<div class="poopbox"><a onclick='lastPage()'> BACK PAGE </a></div>	
