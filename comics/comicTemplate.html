@@ -51,7 +51,7 @@ function updateText() {
 function updateSettings(){
 	var newStyle = "";
 	
-	if(fitWidth == 1){ newStyle = newStyle + "width:100%;"; }
+	if(fitWidth == 1){ newStyle = newStyle + "width:100%;min-height:840px;"; }
 	if(fitWidth == 0){ newStyle = newStyle + "height:840px;"; }
 	if(filter == 1){ newStyle = newStyle + "image-rendering: auto;"; }
 	
@@ -163,7 +163,7 @@ window.onload = function(){
 		<img src="" id="comicImage" style="height:720px;">
 	</div>
 	
-	<div class="comicbox" style="margin-top:7px;height:20px;display:flex;min-height: 50px;"> <!-- move box -->
+	<div class="comicbox" style="margin-top:7px;height:20px;display:flex;min-height: 50px;position:sticky;bottom:0;"> <!-- move box -->
 		
 		<div class="poopbox"></div>
 		<div class="poopbox"><a onclick='lastPage()'> BACK PAGE </a></div>	
