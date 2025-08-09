@@ -373,7 +373,7 @@ img.queerFlag2 {
 
 @keyframes buttonScroll {
   0% {transform:translate(16px,0px);} /*      \/     replace this number with number of buttons                  */
-  50%{transform:translate(  calc(calc(-98px * 10) + 1104px)  ,0px);}
+  50%{transform:translate(  calc(calc(-98px * 12) + 1104px)  ,0px);}
   100%{transform:translate(16px,0px);} 
 }
 
