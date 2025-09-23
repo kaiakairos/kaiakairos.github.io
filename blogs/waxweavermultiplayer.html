@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Blog Post</title> <!-- sets tab name -->
+<link rel="icon" type="image/jpg" href="../images/icon.png"> <!-- sets tab icon -->
+<link href="../styleSheet.css" rel="stylesheet" type="text/css" media="all"> <!-- gets css -->
+
+</head>
+
+<body>
+
+<div class="fatFillBox" style="width:1080px;margin:auto;margin-bottom:24px;"> <p><a href="javascript:history.back()"> <-- go home</a></p> </div>
+
+
+
+<div class="blogWide">
+
+<h1>waxweaver "multiplayer"</h1> <i> September 23rd 2025 </i> <!-- blog title and date! -->
+
+<p> Over the past week I got a flash of inspiration to add multiplayer into my sandbox game <a href="https://store.steampowered.com/app/3599070/waxweaver/"> waxweaver</a>. It was one of the most requested features for it, which makes sense. Multiplayer functionality is pretty standard in games of the genre. I always thought doing multiplayer would be cool, but I avoided it because I didn't know how ( At least when I started the project in January of 2024. ) At some point, after waxweaver was done and finished I tried learning a little bit of multiplayer, and eventually learned that I could use Steam's peer to peer functionality to connect players. This method isn't the greatest way to implement multiplayer, it isn't useable without Steam, it's strictly peer to peer which can be tougher for controlling player behavior (stuff like anti-cheat) and at least one player must be online, no such thing as leaving a server open for anyone to play on. But what it does offer over other methods is convenience and ease of use. It's very easy to establish a connection to another player, sending packets is easy peasy, it's free and very easy for players to use, and Steam hides IP addresses making it safe to connect with other players.
+
+<p>I made a game called "Tiddlywinks" (not to be confused with the real game tiddlywinks) where you could move and shove other players out of a ring, doing so giving you a point. It was jank as shit, and anybody in a country other than the U.S. was completely untouchable. It was no problem that it was bad though, it was just for fun. Sometime later I tried to make a <a href="https://bsky.app/profile/kaiakairos.net/post/3lpt2xds5kc2e">"Tiddlywinks 2"</a>, a more advanced multiplayer game. It didn't work out either, but I learned a little more about how to handle packets and such.</p>
+
+<p>I still wasn't confident about adding multiplayer to waxweaver after those experiments though. Waxweaver was VERY shoddily programmed and I wasn't sure if it could handle multiplayer. Multiplayer is one of those things that needs to be planned from the beginning. At some point (last week) I said fuck it. I wasn't in the midst of doing anything else, I'm gonna try and forcibly shove multiplayer into waxweaver. Wouldn't poorly implemented multiplayer be better than none at all?</p>
+
+<p>I got to work. Syncing the world was easy. When the player joins a lobby, the host sends them some fat packets that contain all the world data. The player holds onto them until it recieves all the data, and loaded it as a saved file like it would normally. Easy. Next was syncing block updates, which happened to be a lot easier than I expected. The game already has a function called "editTiles" which takes in a dictionary and parses it to change the world data and redraw the blocks. All I had to do was send that information over as a packet and easy peasy, world updates and breaking blocks are synced.</p>
+
+<p>The world was really the only part that waxweaver was built for though. Next was syncing players; the player script on its own was way too confusing, its probably the worst spaghetti'd code in the entire game. I ended up creating a second player I called "fakePlayer" which copies only the animation and the basic movement over from the real player script. Then, we send the other clients packets about the players position and input, and we can animate other players and see them walk around in game!</p>
+
+<p>At this point I wanted to try and see if it could handle more players than just me and my test account, so I sent an exe to my discord and told them how to join.</p>
+
+<img src="https://www.newgrounds.com/dump/draw/520aa3b206bb2e1a1dc3e1a23010d194">
+<i>I have no idea who is who but it was working!</i>
+
+<p>This first test revealed lot of issues, and I spent the next 5 days or so scrubbing as many as I could down. Eventually inventories were saved, items stopped being duplicated, chests actually functioned!</p>
+
+<p>It ended up being quite a bit easier than I had imagined, but only because I had paid a pretty big price: Almost EVERYTHING is client sided. I didn't want to force the host player to have to simulate huge swathes of the world if there are many players running around. Syncing liquid sim is just not right. So instead, every player just simulates the world on their own game. It's all client sided, making it pretty prone to cheating. Like I said, a poor implementation is better than none at all. Just, maybe don't make your important worlds public...</p>
+
+<p>I never ended up syncing any of the enemies. The enemies have no idea how to deal with multiple players, and they use lots of RNG, which I am just not prepared to sync. Not only that, but I'd have to do it on ALL of the enemies in the game. It's probably possible to do it, but I don't have the time or interest to rewrite all the enemies, and I wouldn't want to change any of their behavior either.</p>
+
+<img src="https://www.newgrounds.com/dump/draw/36caefd690f37c179855f52679fce210">
+
+<p>On the 20th, I thought it was good enough to share. I didn't want to get people's hopes too high, so I made sure to make it clear these features were "experimental". Although to be honest, I probably won't come back to do anymore other than fixing any critical bugs. I said that version 1.2 was the last update, and I only came back because I got excited about potential multiplayer. Waxweaver was a really cool project, and I'm very happy with the response it's gotten. People are still really excited to play the multiplayer regardless of its quirks, and I think that's cool.</p>
+
+<p>I'm officially tired of waxweaver, I've been in a bit of a rut since it initially came out. I had already planned to stop working on it, but I feel like the multiplayer features are a good note to end it on. Goodbye wax heads. I promise I'll make a more functional game next time.</p>
+
+<img src="https://www.newgrounds.com/dump/draw/9499a189678f22f2deac5f2d2a46c295">
+<i>Multiplayer creative world opened just after releasing the update. Somebody got excited with the water bucket.</i>
+
+</div>
+<div class="fatFillBox" style="width:1080px;margin:auto;margin-bottom:24px;"> <p><a href="javascript:history.back()"> <-- go home</a></p> </div>
+</body>
+</html>
