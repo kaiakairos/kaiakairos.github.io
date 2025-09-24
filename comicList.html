@@ -8,12 +8,22 @@
 <base target="_parent">
 </head>
 
+<script>
+
+function setDesc(title,description) {
+	window.parent.setDesc(title,description);
+}
+
+</script>
+
 <body style="margin:0px;">
 
 <div class="blogList">
 
-<a href="comics/mailguy.html"> <div class="gameBox" style="background-image:url(images/comicBanners/mailguy.png);"> 
-<p> <pageCount> 12 pages - 2025 </pageCount> </p> <img src="images/comicBanners/mailguyIcon.png"> <p><comicTitle> Postage Day </comicTitle></p></div></a>
+<a href="comics/mailguy.html" onmouseover='setDesc("Postage Day","A comic about a mailman trying to deliver a letter. I am not sure if I will finish this one, I dont care much for how its drawn and i kind of want to redo it.")'>
+<div class="gameBox" style="background-image:url(images/comicBanners/mailguy.png);"> 
+<p> <pageCount> 12 pages - 2025 </pageCount> </p> <img src="images/comicBanners/mailguyIcon.png"> 
+<p><comicTitle> Postage Day </comicTitle></p></div></a>
 
 </div>
 </body>
