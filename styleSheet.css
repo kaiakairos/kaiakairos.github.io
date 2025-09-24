@@ -576,3 +576,24 @@ t {
 	height:36px;
 	margin-top:50px;
 }
+
+
+.artGrid {
+	margin:auto;
+	display:flex;
+	width:740px;
+}
+
+.artGrid img{
+	max-width:128px;
+	min-height:128px;
+	object-fit: contain;
+	image-rendering: auto;
+	margin:10px;
+}
+
+.artGrid img:hover{
+	filter:brightness(1.2);
+	transform:translate(0px,2px);
+}
+	
