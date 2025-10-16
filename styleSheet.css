@@ -33,7 +33,7 @@ body {
 	border: ridge 10px white;
 	border-radius: 5px;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 }
 
@@ -52,7 +52,7 @@ body {
 	border-radius: 5px;
 	text-align: left;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 	
 }
@@ -65,7 +65,7 @@ body {
 	padding:6px;
 	display:table;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 }
 
@@ -241,7 +241,7 @@ img.queerFlag2 {
 	padding:6px;
 	display:table;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 }
 
@@ -438,7 +438,7 @@ t {
 	border: ridge 5px white;
 	border-radius: 5px;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 	display:block;
 	padding:10px;
@@ -457,7 +457,7 @@ t {
 	border: ridge 5px white;
 	border-radius: 5px;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 	display:block;
 	padding:10px;
@@ -516,7 +516,7 @@ t {
 	border-radius: 5px;
 	text-align: left;
 	/*background-image:url("images/bg.gif");*/
-	backdrop-filter:brightness(0.1) blur(5px);
+	background-color:#000000EE;
 	box-shadow:4px 4px 0px black;
 	padding:8px;
 	padding-left:24px;
