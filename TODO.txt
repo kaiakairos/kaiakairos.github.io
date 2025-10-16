@@ -1,11 +1,11 @@
 WEBSITE TO DO:
-- make dedicated COMIC page that provides description before u click on it
-- make dedicated blog viewer page
-- make friend page
-- art page?
-- embed games into website itself
-
-
+- make dedicated pages for some of the games ( at least waxweaver )
+- delete background-filter on container boxes (brightness and blur is laggy) and replace them with background-color: #000000EE (or similar, should make it work better on mobile too)
+- make a real comic gosh dang it
+- write a blog or something once in a while
+- "other" page still needs a purpose.. ideas?
+	- reviewing stuff i think is cool
+	- minigame
 
 
 
