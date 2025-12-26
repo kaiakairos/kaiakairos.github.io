@@ -228,6 +228,11 @@ img.queerFlag2 {
 	transform:translate(250px,-288px);
 }
 
+img.queerFlag3 {
+	position:absolute;
+	transform:translate(310px,-288px);
+}
+
 /* MORE box */
 
 .moreBox {
@@ -338,6 +343,7 @@ img.queerFlag2 {
 	padding:0px;
 	/*background-image:url("images/bg.gif");*/
 	box-shadow:4px 4px 0px black;
+	height:51px;
 }
 
 .buttonBoxScroll {
